@@ -8,6 +8,7 @@ var SLACK_LOGIN_TOKEN = process.env.SLACK_LOGIN_TOKEN,
     request = require('request'),
     mappings = {};
 
+/*
 exports.logout = (req,res) => {
 
     if (req.body.token != SLACK_LOGOUT_TOKEN) {
@@ -75,4 +76,5 @@ exports.oauthCallback = (req, res) => {
 
 };
 
+*/
 exports.getOAuthObject = slackUserId => mappings[slackUserId];
